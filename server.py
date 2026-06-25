@@ -15,7 +15,9 @@ CORS(app, resources={
     }
 })
 
-OPENAI_KEY = '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'
+OPENAI_KEY = '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'
+client = OpenAI(api_key=OPENAI_KEY)
+
 client = OpenAI(api_key=OPENAI_KEY)
 
 
