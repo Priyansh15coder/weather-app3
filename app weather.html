@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <form class="weatherForm">
+        <div class="inputWrapper">
+            <input type="text" class="cityInput" id="cityInput" placeholder="Enter city name">
+            <ul class="suggestionsList" id="suggestionsList"></ul>
+        </div>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none"></div>
+
+    <button id="chatToggle" class="chatToggleButton" type="button">Chat with Assistant</button>
+    <section class="chatPanel hidden" id="chatPanel" aria-hidden="true">
+        <div class="chatPanelInner">
+            <div class="chatHeader">
+                <div>
+                    <h2>Chat Assistant</h2>
+                    <p>Ask about weather, travel, or anything else.</p>
+                </div>
+                <button id="chatClose" class="chatCloseButton" type="button" aria-label="Close chat panel">Close ×</button>
+            </div>
+            <div class="chatBody" id="chatBody">
+                <div class="chatMessages" id="chatMessages"></div>
+            </div>
+            <div class="chatFooter">
+                <input id="chatInput" class="chatInputField" type="text" placeholder="Ask the assistant..." aria-label="Chat message" />
+                <button id="chatMic" class="chatMicButton" type="button" aria-label="Use microphone">🎤</button>
+                <button id="chatSpeak" class="chatSpeakButton" type="button" aria-label="Speak assistant response">🔊</button>
+                <button id="chatSpeakOff" class="chatSpeakOffButton" type="button" aria-label="Stop speech">⏹️</button>
+                <button id="chatSend" class="chatSendButton" type="button">Send</button>
+            </div>
+            <p class="chatStatus" id="chatStatus">Powered by OpenAI. Start the conversation.</p>
+        </div>
+    </section>
+
+    <div class="copyright" style="margin-top: auto;">
+        <p>&copy; 2026 Weather App. Weather data provided by OpenWeatherMap.</p>
+    </div>
+
+     <script src="index.js"></script>
+
+
+
+</html>
